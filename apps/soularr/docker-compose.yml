@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   soularr:
-    image: ghcr.io/mrusse/soularr:latest
+    image: ghcr.io/mrusse/soularr:main
     container_name: soularr
     user: "1000:1000"
     environment:

@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "soularr",
   "tipi_version": 1,
-  "version": "latest",
+  "version": "main",
   "categories": ["media", "music", "automation"],
   "description": "Soularr is a Python script that connects Lidarr with Soulseek via slskd. It automatically searches for and downloads music from Soulseek based on your Lidarr wanted list, then triggers Lidarr to import the completed downloads.",
   "short_desc": "Automated music downloads from Soulseek for Lidarr",
