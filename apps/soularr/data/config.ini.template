@@ -1,0 +1,82 @@
+[Lidarr]
+# API key from Lidarr: Settings > General > API Key
+api_key = {{SOULARR_LIDARR_API_KEY}}
+# Use http://lidarr:8686 for standard Lidarr or http://lidarr-deemix:8686 for Lidarr on Steroids
+host_url = {{SOULARR_LIDARR_HOST}}
+# Path to slskd downloads as seen from inside Lidarr container
+# This should match where Lidarr can access the slskd downloads
+download_dir = /media/downloads/complete
+# Set to True to disable syncing with Lidarr (for testing)
+disable_sync = False
+
+[Slskd]
+# API key configured in slskd: Options > API Keys
+api_key = {{SOULARR_SLSKD_API_KEY}}
+# slskd container URL
+host_url = {{SOULARR_SLSKD_HOST}}
+url_base = /
+# Path to downloads as seen from inside slskd container
+download_dir = /downloads
+# Delete search results after downloading
+delete_searches = False
+# Timeout for stalled downloads in seconds
+stalled_timeout = 3600
+
+[Release Settings]
+# Use the most common track number when matching releases
+use_most_common_tracknum = True
+# Allow multi-disc releases
+allow_multi_disc = True
+# Accepted release countries (comma-separated)
+accepted_countries = Europe,Japan,United Kingdom,United States,[Worldwide],Australia,Canada
+# Skip region check entirely
+skip_region_check = False
+# Accepted release formats (comma-separated)
+accepted_formats = CD,Digital Media,Vinyl
+
+[Search Settings]
+# Search timeout in milliseconds
+search_timeout = 5000
+# Maximum peer queue position to accept
+maximum_peer_queue = 50
+# Minimum peer upload speed (0 = no minimum)
+minimum_peer_upload_speed = 0
+# Minimum filename match ratio (0.0 to 1.0)
+minimum_filename_match_ratio = 0.8
+# Allowed file types in order of preference
+allowed_filetypes = flac,mp3 320,mp3
+# Users to ignore (comma-separated)
+ignored_users = 
+# Search for individual tracks if album not found
+search_for_tracks = True
+# Prepend artist name to album searches
+album_prepend_artist = False
+# Prepend artist name to track searches
+track_prepend_artist = True
+# Search type: incrementing_page or random
+search_type = incrementing_page
+# Number of albums to process per run
+number_of_albums_to_grab = {{SOULARR_ALBUMS_TO_GRAB}}
+# Remove album from wanted list if download fails
+remove_wanted_on_failure = False
+# Words to blacklist in titles (comma-separated)
+title_blacklist = 
+# Search source: missing or cutoff_unmet
+search_source = missing
+# Enable search denylist for failed searches
+enable_search_denylist = False
+# Maximum search failures before denylisting
+max_search_failures = 3
+
+[Download Settings]
+# Filter downloads based on settings
+download_filtering = True
+# Use extension whitelist instead of blacklist
+use_extension_whitelist = False
+# Whitelisted extensions (comma-separated)
+extensions_whitelist = lrc,nfo,txt
+
+[Logging]
+level = INFO
+format = [%(levelname)s|%(module)s|L%(lineno)d] %(asctime)s: %(message)s
+datefmt = %Y-%m-%dT%H:%M:%S%z

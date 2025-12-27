@@ -1,0 +1,69 @@
+{
+  "$schema": "../app-info-schema.json",
+  "name": "Soularr",
+  "available": true,
+  "no_gui": true,
+  "dynamic_config": true,
+  "id": "soularr",
+  "tipi_version": 1,
+  "version": "latest",
+  "categories": ["media", "music", "automation"],
+  "description": "Soularr is a Python script that connects Lidarr with Soulseek via slskd. It automatically searches for and downloads music from Soulseek based on your Lidarr wanted list, then triggers Lidarr to import the completed downloads.",
+  "short_desc": "Automated music downloads from Soulseek for Lidarr",
+  "author": "mrusse",
+  "source": "https://github.com/mrusse/soularr",
+  "website": "https://soularr.net",
+  "form_fields": [
+    {
+      "type": "text",
+      "label": "Lidarr API Key",
+      "hint": "Get this from Lidarr: Settings > General > API Key",
+      "required": true,
+      "env_variable": "SOULARR_LIDARR_API_KEY"
+    },
+    {
+      "type": "text",
+      "label": "Lidarr Host URL",
+      "hint": "Use 'http://lidarr:8686' for standard Lidarr or 'http://lidarr-deemix:8686' for Lidarr on Steroids",
+      "default": "http://lidarr:8686",
+      "required": true,
+      "env_variable": "SOULARR_LIDARR_HOST"
+    },
+    {
+      "type": "text",
+      "label": "slskd API Key",
+      "hint": "Configure an API key in slskd's settings under Options > API Keys",
+      "required": true,
+      "env_variable": "SOULARR_SLSKD_API_KEY"
+    },
+    {
+      "type": "text",
+      "label": "slskd Host URL",
+      "hint": "Default slskd container URL",
+      "default": "http://slskd:5030",
+      "required": true,
+      "env_variable": "SOULARR_SLSKD_HOST"
+    },
+    {
+      "type": "number",
+      "label": "Script Interval (seconds)",
+      "hint": "How often Soularr checks for new wanted albums",
+      "default": 300,
+      "min": 60,
+      "required": false,
+      "env_variable": "SCRIPT_INTERVAL"
+    },
+    {
+      "type": "number",
+      "label": "Number of Albums to Grab",
+      "hint": "Maximum number of albums to process per run",
+      "default": 10,
+      "min": 1,
+      "required": false,
+      "env_variable": "SOULARR_ALBUMS_TO_GRAB"
+    }
+  ],
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1735307400000,
+  "updated_at": 1735307400000
+}
