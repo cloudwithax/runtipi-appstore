@@ -24,8 +24,8 @@
     {
       "type": "text",
       "label": "Lidarr Host URL",
-      "hint": "Use 'http://lidarr:8186' for standard Lidarr or 'http://lidarr-deemix:8186' for Lidarr on Steroids",
-      "default": "http://lidarr:8186",
+      "hint": "Use 'http://lidarr:8686' for standard Lidarr or 'http://lidarr-deemix:8686' for Lidarr on Steroids",
+      "default": "http://lidarr:8686",
       "required": true,
       "env_variable": "SOULARR_LIDARR_HOST"
     },

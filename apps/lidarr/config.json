@@ -4,7 +4,7 @@
   "available": true,
   "exposable": true,
   "dynamic_config": true,
-  "port": 8131,
+  "port": 8186,
   "id": "lidarr",
   "tipi_version": 23,
   "version": "2.14.5",
