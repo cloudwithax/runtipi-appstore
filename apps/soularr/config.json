@@ -24,8 +24,8 @@
     {
       "type": "text",
       "label": "Lidarr Host URL",
-      "hint": "Use 'http://lidarr:8686' for standard Lidarr or 'http://lidarr-deemix:8686' for Lidarr on Steroids",
-      "default": "http://lidarr:8686",
+      "hint": "Use localhost with the port Lidarr is exposed on (check Runtipi app settings)",
+      "default": "http://localhost:8186",
       "required": true,
       "env_variable": "SOULARR_LIDARR_HOST"
     },
@@ -39,8 +39,8 @@
     {
       "type": "text",
       "label": "slskd Host URL",
-      "hint": "Default slskd container URL",
-      "default": "http://slskd:5030",
+      "hint": "Use localhost with the port slskd is exposed on (check Runtipi app settings)",
+      "default": "http://localhost:5030",
       "required": true,
       "env_variable": "SOULARR_SLSKD_HOST"
     },

@@ -43,6 +43,7 @@ const networkExceptions = [
   "cloudflared",
   "beszel-agent",
   "watchyourlan",
+  "soularr",
 ];
 const getAppConfigs = (): AppConfig[] => {
   const apps: AppConfig[] = [];

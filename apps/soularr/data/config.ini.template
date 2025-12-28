@@ -1,7 +1,7 @@
 [Lidarr]
 # API key from Lidarr: Settings > General > API Key
 api_key = {{SOULARR_LIDARR_API_KEY}}
-# Use http://lidarr:8686 for standard Lidarr or http://lidarr-deemix:8686 for Lidarr on Steroids
+# Use localhost with the port Lidarr is exposed on
 host_url = {{SOULARR_LIDARR_HOST}}
 # Path to slskd downloads as seen from inside Lidarr container
 # This should match where Lidarr can access the slskd downloads
@@ -12,7 +12,7 @@ disable_sync = False
 [Slskd]
 # API key configured in slskd: Options > API Keys
 api_key = {{SOULARR_SLSKD_API_KEY}}
-# slskd container URL
+# Use localhost with the port slskd is exposed on
 host_url = {{SOULARR_SLSKD_HOST}}
 url_base = /
 # Path to downloads as seen from inside slskd container

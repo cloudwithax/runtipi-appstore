@@ -5,6 +5,7 @@ services:
     image: ghcr.io/mrusse/soularr:main
     container_name: soularr
     user: "1000:1000"
+    network_mode: host
     environment:
       - TZ=${TZ}
       - SCRIPT_INTERVAL=${SCRIPT_INTERVAL:-300}
@@ -12,7 +13,5 @@ services:
       - ${APP_DATA_DIR}/data:/data
       - ${ROOT_FOLDER_HOST}/media/downloads/complete:/downloads
     restart: unless-stopped
-    networks:
-      - tipi_main_network
     labels:
       runtipi.managed: true
