@@ -5,7 +5,8 @@ services:
     image: ghcr.io/mrusse/soularr:main
     container_name: soularr
     user: "1000:1000"
-    network_mode: host
+    networks:
+      - runtipi_tipi_main_network
     environment:
       - TZ=${TZ}
       - SCRIPT_INTERVAL=${SCRIPT_INTERVAL:-300}

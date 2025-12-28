@@ -6,6 +6,7 @@
       "name": "soularr",
       "image": "ghcr.io/mrusse/soularr:main",
       "user": "1000:1000",
+      "networks": ["runtipi_tipi_main_network"],
       "environment": [
         {
           "key": "TZ",
