@@ -24,8 +24,8 @@
     {
       "type": "text",
       "label": "Lidarr Host URL",
-      "hint": "Use container name lidarr with the internal port 8686",
-      "default": "http://lidarr:8686",
+      "hint": "Use container name lidarr-deemix with the internal port 8686",
+      "default": "http://lidarr-deemix:8686",
       "required": true,
       "env_variable": "SOULARR_LIDARR_HOST"
     },

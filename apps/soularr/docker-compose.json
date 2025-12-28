@@ -15,6 +15,26 @@
         {
           "key": "SCRIPT_INTERVAL",
           "value": "${SCRIPT_INTERVAL:-300}"
+        },
+        {
+          "key": "SOULARR_LIDARR_API_KEY",
+          "value": "${SOULARR_LIDARR_API_KEY}"
+        },
+        {
+          "key": "SOULARR_LIDARR_HOST",
+          "value": "${SOULARR_LIDARR_HOST}"
+        },
+        {
+          "key": "SOULARR_SLSKD_API_KEY",
+          "value": "${SOULARR_SLSKD_API_KEY}"
+        },
+        {
+          "key": "SOULARR_SLSKD_HOST",
+          "value": "${SOULARR_SLSKD_HOST}"
+        },
+        {
+          "key": "SOULARR_ALBUMS_TO_GRAB",
+          "value": "${SOULARR_ALBUMS_TO_GRAB:-10}"
         }
       ],
       "volumes": [
